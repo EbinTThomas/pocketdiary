@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="pkt_header">
+        <div class="pkt_logo_container">
+            <img src="logo.svg" alt="" class="pkt_logo">
+        </div>
+        <div class="pkt_header_gap"></div>
+        <div class="pkt_auth_container">
+            <div class="pkt_auth">
+                <span class="pkt_auth_username">admin</span><br />
+                <span class="pkt_auth_email">admin@example.com</span>
+            </div>
+            <label for="pkt_auth_dropdown_checkbox" class="pkt_auth_dropdown_btn">
+                <svg class="pkt_auth_dropdown_btn_svg" width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.84 23.2L0.0800002 0.879995H35.6L17.84 23.2Z" fill="#F55381" />
+                </svg>
+            </label>
+            <input type="checkbox" id="pkt_auth_dropdown_checkbox" />
+            <ul class="pkt_auth_dropdown_list">
+                <li class="pkt_auth_dropdown_list_item">
+                    <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M39 6.5C21.06 6.5 6.5 21.06 6.5 39C6.5 56.94 21.06 71.5 39 71.5C56.94 71.5 71.5 56.94 71.5 39C71.5 21.06 56.94 6.5 39 6.5ZM22.9775 59.41C24.375 56.485 32.89 53.625 39 53.625C45.11 53.625 53.6575 56.485 55.0225 59.41C50.6025 62.92 45.045 65 39 65C32.955 65 27.3975 62.92 22.9775 59.41ZM59.67 54.6975C55.0225 49.0425 43.745 47.125 39 47.125C34.255 47.125 22.9775 49.0425 18.33 54.6975C15.015 50.3425 13 44.915 13 39C13 24.6675 24.6675 13 39 13C53.3325 13 65 24.6675 65 39C65 44.915 62.985 50.3425 59.67 54.6975V54.6975ZM39 19.5C32.695 19.5 27.625 24.57 27.625 30.875C27.625 37.18 32.695 42.25 39 42.25C45.305 42.25 50.375 37.18 50.375 30.875C50.375 24.57 45.305 19.5 39 19.5ZM39 35.75C36.3025 35.75 34.125 33.5725 34.125 30.875C34.125 28.1775 36.3025 26 39 26C41.6975 26 43.875 28.1775 43.875 30.875C43.875 33.5725 41.6975 35.75 39 35.75Z"
+                            fill="white" />
+                    </svg>
+                    Profile
+                </li>
+                <li class="pkt_auth_dropdown_list_item">
+                    <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M53.8333 25.3333L49.3683 29.7983L54.3717 34.8333H28.5V41.1667H54.3717L49.3683 46.17L53.8333 50.6667L66.5 38L53.8333 25.3333ZM15.8333 15.8333H38V9.5H15.8333C12.35 9.5 9.5 12.35 9.5 15.8333V60.1667C9.5 63.65 12.35 66.5 15.8333 66.5H38V60.1667H15.8333V15.8333Z"
+                            fill="white" />
+                    </svg>
+                    Logout
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="pkt_content_container">
+        <section class="pkt_search_container">
+            <input type="text" name="" id="pkt_search_bar" placeholder="Search">
+            <a href="#" class="pkt_add_diary_btn">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                    class="style-scope yt-icon" style="pointer-events: none; display: block;">
+                    <g class="style-scope yt-icon">
+                        <path
+                            d="M17,13h-4v4h-2v-4H7v-2h4V7h2v4h4V13z M12,3c-4.96,0-9,4.04-9,9s4.04,9,9,9c4.96,0,9-4.04,9-9S16.96,3,12,3 M12,2 c5.52,0,10,4.48,10,10s-4.48,10-10,10C6.48,22,2,17.52,2,12S6.48,2,12,2L12,2z"
+                            class="style-scope yt-icon"></path>
+                    </g>
+                </svg>
+                <span>Add Today's</span>
+            </a>
+        </section>
+        <section class="pkt_content_view">
+            <div class="pkt_content">
+                <button class="pkt_date_filter_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-calendar">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>
+                        This month
+                    </span>
+                    <svg width="9" height="6" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.84 23.2L0.0800002 0.879995H35.6L17.84 23.2Z" fill="#000" />
+                    </svg>
+                </button>
+                <article class="pkt_diary_item">
+                    <span>1 Tue</span>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been...
+                    </p>
+                </article>
+                <div class="pkt_calender_class">
+                    <ul class="pkt_date_scroll">
+                        <li>
+                            <button class="pkt_date_btn active">1<br />Tue</button>
+                        </li>
+                        <li>
+                            <button class="pkt_date_btn">1<br />Tue</button>
+                        </li>
+                        <li>
+                            <button class="pkt_date_btn">2<br />Wed</button>
+                        </li>
+                        <li>
+                            <button class="pkt_date_btn">3<br />Thu</button>
+                        </li>
+                        <li>
+                            <button class="pkt_date_btn">4<br />Fri</button>
+                        </li>
+                        <li>
+                            <button class="pkt_date_btn">5<br />Sat</button>
+                        </li>
+                    </ul>
+                    <div class="pkt_calender_gap">
+                        <svg viewBox="0 0 996 996" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M788.5 166H747V83H664V166H332V83H249V166H207.5C161.435 166 124.915 203.35 124.915 249L124.5 830C124.5 875.65 161.435 913 207.5 913H788.5C834.15 913 871.5 875.65 871.5 830V249C871.5 203.35 834.15 166 788.5 166ZM788.5 830H207.5V415H788.5V830ZM788.5 332H207.5V249H788.5V332ZM373.5 581H290.5V498H373.5V581ZM539.5 581H456.5V498H539.5V581ZM705.5 581H622.5V498H705.5V581ZM373.5 747H290.5V664H373.5V747ZM539.5 747H456.5V664H539.5V747ZM705.5 747H622.5V664H705.5V747Z"
+                                fill="white" fill-opacity="0.1" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="pkt_footer">
+        <div class="pkt_privacy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-shield">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Privacy Protected</span>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
